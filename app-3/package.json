@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:app3": "ng build --single-bundle --output-hashing none",
+    "liveserver": "npx live-server ./dist --port=8083",
+    "build-live": "npm run build:app3 && npm run liveserver",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

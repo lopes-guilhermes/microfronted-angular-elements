@@ -1,0 +1,26 @@
+.main-project {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.microfrontend {
+    border: 2px dotted blue;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .microapps {
+        display: flex;
+        align-items: center;
+
+        div {
+            border: 1px double greenyellow;
+            margin: 5px;
+            padding: 10px;
+
+            &.selected {
+                border:  2px solid green;
+            }
+        }
+    }
+}
